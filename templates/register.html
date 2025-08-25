@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container border border-primary m-3 p-3" register>
+
+    {%if message %}
+    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        {{message}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {% endif %}
+
+
+    <h3 class="bg-dark text-white p-3 m-3">Register</h3>
+    <form method="post">
+        {% csrf_token %} 
+        <!--  {{form}} -->
+        <div class="mb-3">
+        {% for i in form %}
+            {{i.label_tag}}
+            {{i}}
+            <div id="emailHelp" class="form-text">{{i.errors}}</div>
+        {% endfor %}
+        </div>
+        <button class="btn btn-dark m-3" type="submit">Submit</button>
+    </form>
+</div>
+
+{% endblock  %}

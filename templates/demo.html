@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %} Demo {% endblock %}
+{% block content %}
+
+    <p>{{data | lower}}</p>
+    <p>{{data | upper}}</p>
+    <p>{{data | title}}</p>
+    <p>{{data | first}}</p>
+    <p>{{data | last}}</p>
+    <p>{{data | length }}</p>
+    <p>{{data | truncatechars:4}}</p>
+    <p>{{5 | add:8}}</p>
+
+{% endblock %}
