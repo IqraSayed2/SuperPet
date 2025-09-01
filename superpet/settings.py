@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-g@)(gkf(0+79kq+b&-!h3q6sbnt6%f5=1-u8mz+0q&+21^av-v
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["Iqraaa.pythonanywhere.com."]
 
 
 # Application definition
@@ -77,11 +77,11 @@ WSGI_APPLICATION = 'superpet.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'superpet',
-        'HOST': '127.0.0.1',
+        'NAME': 'Iqraaa$superpet',
+        'HOST': 'Iqraaa.mysql.pythonanywhere-services.com',
         'PORT': 3306,
-        'USER': 'root',
-        'PASSWORD': 'root'
+        'USER': 'Iqraaa',
+        'PASSWORD': 'superpet'
     }
 }
 
